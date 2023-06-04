@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    text-align: center;
+}
+
+.checkOut {
+    margin: 20px auto;
+}
+.totalPrice {
+    margin-top: 20px;
+    margin-left: 150px;
+    border-bottom: 1px solid;
+}
+
+.containerAll {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+h2 {
+    margin: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: 70px;
+    margin: 10px auto;
+}
+
+.container-one {
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+    margin-right: 30px;
+    
+}
+
+.container-two {
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+    overflow-y: scroll;
+}
+
+.container-two::-webkit-scrollbar {
+    display: none;
+}
+
+.border-one {
+    width: 90%;
+    height: auto;
+    padding: 10px 30px;
+}
+
+.border-one input {
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    height: 25px;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid grey;
+
+}
+
+.border-one button {
+    width: 400px;
+    height: 25px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+}
+
+.fa-chevron-right {
+    padding: 0px 10px;
+}
+
+.listActive {
+    margin-bottom: 40px;
+}
+
+.information {
+    font-size: smaller;
+}
+
+.renderProduct {
+    width: 380px;
+    height: auto;
+}
+
+.img img {
+    width: 100px;
+    height: 100px;
+    margin: auto 40px;
+}
+
+.renderItem {
+    height: auto;
+    display: flex;
+    font-size: 12px;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    
+    
+}
+
+.product-detail {
+    padding: 10px 10px;
+    display: flex;
+    text-align: center;
+    
+}
+.inforItem{
+    font-size: 12px;
+    margin-top: 15px;
+}
+.subtotal{
+    line-height: 2.5;
+}
+/* validate  */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 300px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 300px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 300px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 300px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}

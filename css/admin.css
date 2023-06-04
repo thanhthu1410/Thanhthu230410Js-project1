@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-family: sans-serif;
+    
+}
+
+.title {
+    padding: 30px;
+    text-align: center;
+}
+.homepage{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchProduct{
+    display: flex;
+    align-items: center;
+}
+.searchProduct input {
+    width: 500px;
+    outline: none;
+}
+.active{
+    margin-left: 100px;
+}
+.container-border {
+    width: 100%;
+    height: auto;
+
+}
+.showListCustomers{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.renderListProduct {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+   
+}
+/* kkkkk */
+.renderList {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    border-bottom: 1px solid;
+}
+
+.itemProduct{
+    margin: 10px auto;
+    font-size: 12px;
+    display: flex;
+}
+.renderProduct {
+    display: flex;
+    width: 250px;
+    border: 1px solid;
+}
+.item-detail{
+    padding-top: 15px;
+}
+
+.item-img img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.container-detail-product{
+    width: 25%;
+    border: 1px solid;
+    display: flex;
+}
+
+.detail-product-puschase{
+    display: block;
+    
+}
+.material-symbols-outlined {
+    cursor: pointer;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 20
+        
+}
+.updateProduct{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+   
+#changeImg12{
+    width: 120px;
+    height: 120px;
+    margin: 30px 30px 0px 30px;
+
+}
+.addProduct{
+    align-items: center;
+    width: 700px;
+    border: 1px solid;
+    display: flex;
+}
+#option1{
+    width: 120px;
+    height: 120px;
+    margin: 30px 30px 0px 30px;
+}
+.addProduct{
+    display: none;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.newClassAddProduct{
+    display: flex;
+}
+
+.renderListCustomers{
+    width: 1000px;
+    border: 2px solid;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+}
+.InforCustomers{
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+}
+.listProduct{
+   
+    width: 1000px;
+    height: auto;
+   
+    
+}
+
+.inputDetail input{
+    margin-top: 15px;
+    outline: none;
+}
+.inputDetail button{
+    width: 50px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 15px;
+}
+.renderListCustomers{
+    display: none;
+}
+.newClassShowHistory{
+    display: flex;
+}
+.img img{
+    width: 80px;
+    height: 80px;
+}

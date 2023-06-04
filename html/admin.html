@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <h2 class="title">ADMIN </h2>
+        
+        <div class="container-border">
+            <div class="active">
+                <p class="homepage" onclick="backToHomePage()">
+                    <span class="material-symbols-outlined">
+                        arrow_back
+                        </span> HOME PAGE</p>
+                <div class="searchProduct">
+                    <span class="material-symbols-outlined">
+                        search
+                        </span>
+                    <input type="text" placeholder="Search" id="valueSearch" oninput="searchProduct()"> 
+                </div>
+
+                <div class="updateProduct" onclick="showAddProduct()">
+                    <span class="material-symbols-outlined">
+                        add_circle
+                    </span>
+                    <span>ADD PRODUCT</span>
+                </div>
+                <div class="listCustomers" onclick="showListCustomers()">
+                    <div class="showListCustomers">
+                        <span class="material-symbols-outlined">
+                            group
+                        </span>
+                        <span>PUSCHASE HISTORY</span>
+                    </div>
+                </div>
+            </div>
+            <!-- render list customers -->
+            <div class="renderListCustomers">
+                <!-- <div class="InforCustomers">
+                    Email of Custommer:
+                    <div class="EmailCustomers"></div>
+                </div> -->
+                <div class="puschaseHistory">
+                    <div class="listProduct">
+                        
+                        <!-- mot nguoi -->
+                    </div>
+                </div>
+            </div>
+            <div class="addProduct">
+                <div class="addImg">
+                    <img id="changeImg12" src="" alt=""> <br>
+                    <label for="addfile">
+                        <span style="margin-left: 75px;" class="material-symbols-outlined">
+                            cloud_upload
+                        </span></label>
+                    <input style="display: none;" id="addfile" type="file" onchange="changeImage(this)" /> <br>
+                </div>
+                <div class="optionsColor">
+                    <div class="selectColor">
+                        <img id="option1" src="" alt=""> <br>
+                        <label for="addColorFile">
+                            <span style="margin-left: 75px;" class="material-symbols-outlined">
+                                cloud_upload
+                            </span>
+                        </label>
+                        <input style="display: none;" id="addColorFile" type="file" multiple
+                            onchange="changeImage1(this)" /> <br>
+
+
+                        <!-- <img id="option2" src="" alt=""> <br>
+                    <input type="file" onchange="changeImage2(this)" /> <br>
+                    <img id="option3" src="" alt=""> <br>
+                    <input type="file" onchange="changeImage(this)" /> <br> -->
+                    </div>
+                </div>
+                <div class="inputDetail">
+                    <input class="nameProduct" type="text" placeholder="Name Product"> <br>
+                    <input class="priceProduct" type="text" placeholder="Price"> <br>
+                    <input class="nameList" type="text" placeholder="Name List"> <br>
+                    <button onclick="addProduct()">ADD</button>
+                </div>
+            </div>
+            <div class="renderListProduct">
+
+
+            </div>
+        </div>
+        <script src="/js/admin.js"></script>
+</body>
+
+</html>

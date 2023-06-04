@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/checkout.css"> 
+</head>
+<style>
+    
+</style>
+
+<body>
+    <!-- check out  -->
+    <div class="containerAll">
+        <div class="container-one">
+            <div class="border-one">
+                <div class="logo">
+                    <img src="/image/banner/Stussy_Logo.svg.png" alt="">
+                </div>
+                <div class="listActive">
+                    <span style="color: #5f5a5a;" onclick="backPage()">CART </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>SHIPPING</span>
+                </div>
+                <div class="information">
+                    <p>SHIPPING ADDRESS</p>
+                    <select style="width: 150px; margin: 10px 0px; font-size: smaller;">
+                        <option value="">VIET NAM</option>
+                        <option value="">UNITED STATES</option>
+                        <option value="">JAPAN</option>
+                    </select> <br>
+                    <input class="valueEmail" type="text" placeholder="Email"> <br>
+                    <input class="valueFullname" type="text" placeholder="Full Name"> <br>
+                    <input class="valueAddress" type="text" placeholder="Address"> <br>
+                    <input class="valuePhone" type="text" placeholder="Phone"><br>
+                </div>
+                <div class="checkout">
+                    <button onclick="checkInfor()" >CHECK OUT</button> <br>
+                    <button style="background-color: #fff; color: black;" onclick="backPage()">RETURN TO CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-two">
+            <!-- render product  -->
+            <div class="container">
+                <h2>SHOPPING BAG</h2>
+                <div class="renderProduct">
+                    <div class="renderItem">
+                        <!-- render cart -->
+                    </div>
+                </div>
+                    <p class="totalPrice"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="snackbar">Some text some message..</div>
+    <script src="../js/checkout.js"></script>
+</body>
+
+</html>

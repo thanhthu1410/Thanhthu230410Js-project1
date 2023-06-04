@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThanhThu-Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<style>
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="headerContainer">
+            <div class="headerTop">
+                <div class="logo">
+                    <a href="index.html"><img src="./image/banner/Stussy_Logo.svg.png" alt=""></a>
+                </div>
+                <div class="search-button-container">
+                    <span onclick="renderProducts(JSON.parse(localStorage.getItem('listProducts')))" class="allitem">ALL
+                        ITEMS</span>
+                    <input type="text" id="valueSearch" class="search-product" placeholder="Search"
+                        oninput="searchProduct()" style="width: 200px ;">
+                    <button style="background-color: #fff; border: none;" class="search-button"> <i
+                            class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="buyitem">
+                <div class="cart-icon">
+                    <span>
+                        <i class="fa-solid fa-cart-shopping" id="cart-product"></i>
+                        <span class="totalCoutnProduct" id="totalCoutnProduct"></span>
+                    </span>
+                </div>
+                <!-- <span><i class="fa-solid fa-user"></i></span> -->
+                <div class="div-login">
+                    <i class="fa-regular fa-user"></i>
+                    <button class="admin-button" onclick="admin()">ADMIN</button>
+                    <button class="login" onclick="loginNext()">Sign in</button>
+                    <button class="register" onclick="registerNext()">Register</button>
+                    <button class="logout" onclick="checklogout()">Logout</button>
+                </div>
+                <div id="mobile">
+                    <i id="bar" class="fas fa-outdent"></i>
+                </div>
+            </div>
+            <div class="search-products">
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <ul class="nav-bottom">
+                <li><span class="tees" onclick="renderTee()">TEES</span></li>
+                <li><span class="sweats" onclick="renderSW()">SWEATS</span></li>
+                <li><span class="topsAndShirts" onclick="renderTS()">TOPS & SHIRTS</span></li>
+                <li><span class="bottoms" onclick="renderBT()">BOTTOMS</span></li>
+                <li><span class="outerwear" onclick="renderOT()">OUTERWEAR</span></li>
+                <li><span class="accessories" onclick="renderAC()">ACCESSORIES</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product">
+        <!-- hien thi san pham  -->
+        <div class="banner">
+            <div class="scrollable-images">
+                <img src="./image/banner/banner4.jpg" alt="">
+                <img src="./image/banner/banner2.png" alt="">
+                <img src="./image/banner/banner.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p class="stussy">S T U S S Y</p>
+        <div class="iconfooter">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <span class="reviewLocal">Beats By Dr. Dre and Stüssy have collaborated on a limited edition Beats Pill+ Speaker
+            that combines their signature Southern California aesthetic with a rich, clear sound field that will improve
+            your listening experience anywhere.
+            Stüssy and Beats By Dr.Dre is available worldwide at stussy.com on Friday, March 4th at 10am PST.</span>
+        <p class="unt">United States || $$</p>
+    </div>
+
+    <div id="snackbar">Some text some message..</div>
+
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+
+</html>

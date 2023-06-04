@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+
+
+<body>
+    
+    <div class="container-all">
+        <div class="container-left">
+            <h3>LOGIN</h3>
+            <h5>REGISTERED CUSTOMERS</h5>
+            <p>Please provide the email address and password associated with the account. If you're having trouble,
+                please use the prompt below to reset your password.</p> <br>
+            <input id="valueEmail" type="text" placeholder="EMAIL ADDRESS"> <br>
+            <p class="validexEmail">Pleas check your email</p>
+            <input id="valuePassword" type="password" placeholder="PASSWORD"> <br>
+            <button onclick="loginUser()">SIGN IN</button>
+        </div>
+        <div class="container-right">
+            <h3>REGISTER</h3>
+            <h5>NEED AN ACCOUNT?</h5>
+            <p>By creating an account with our store, you will be able to move through the checkout process faster,
+                store multiple shipping addresses, view and track your orders in your account, and more</p>
+            <button class="buttonnext" onclick="registerPage()">PROCEED TO REGISTER</button>
+        </div>
+    </div>
+    <div id="snackbar">Some text some message..</div>
+  <script src="/js/login.js"></script>
+</body>
+
+</html>
